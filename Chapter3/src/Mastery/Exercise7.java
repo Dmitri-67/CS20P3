@@ -7,7 +7,7 @@ public class Exercise7 {
 	public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter  three digit number: ");
+        System.out.print("Enter a three digit number: ");
         int number = input.nextInt();
 
         int hundreds = number / 100;        
