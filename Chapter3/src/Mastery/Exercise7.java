@@ -2,7 +2,7 @@ package Mastery;
 
 import java.util.Scanner;
 
-public class Digits2 {
+public class Exercise7 {
 
 	public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -10,9 +10,9 @@ public class Digits2 {
         System.out.print("Enter a three digit number: ");
         int number = input.nextInt();
 
-        int hundreds = number / 100;        // divide by 100
-        int tens = (number / 10) % 10;      // get middle digit
-        int ones = number % 10;             // last digit
+        int hundreds = number / 100;        
+        int tens = (number / 10) % 10;      
+        int ones = number % 10;             
 
         System.out.println("Hundreds: " + hundreds);
         System.out.println("Tens: " + tens);
