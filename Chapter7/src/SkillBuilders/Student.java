@@ -9,9 +9,9 @@ public class Student
 	
 	public Student()//Constructor method
 	{
-		firstName = "";
-		lastName = "";
-		address = "";
+		firstName = "Unknown";
+		lastName = "Unknown";
+		address = "Unknown";
 		stuID = 0000000;
 	}
 	
@@ -57,6 +57,12 @@ public class Student
 	{
 		stuID = s;
 	}
+	
+	public String toString()
+	{
+		return ("First name: "+ firstName + "Last name: "+ lastName + "/nAddress: "+ address + "/nStudent ID: "+ stuID);
+	}
+	
 
 
-}
+}//Closes the class
