@@ -35,5 +35,18 @@ public class Circle {
 		
 		return c;	
 	}
+	public static void displayFormula()
+	{
+		System.out.println("Six seven");
+	}
+	public boolean equals(Object c)
+	{
+		Circle testObj = (Circle)c;
+		
+		if(testObj.getRadius() == radius)
+{
+	return false;
+}
+	}
 
 }
