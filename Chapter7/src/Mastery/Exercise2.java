@@ -3,11 +3,11 @@ package Mastery;
 public class Exercise2 {
     private int number;
 
-    public Exercise2(int n) {
+    public Exercise2(int n) { 
         number = n;
     }
 
-    public int getWhole() {
+    public int getWhole() { //All the calculations
         return number;
     }
 

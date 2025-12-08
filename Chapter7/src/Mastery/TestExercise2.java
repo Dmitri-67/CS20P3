@@ -11,7 +11,7 @@ public class TestExercise2 {
 
         char choice;
 
-        do {
+        do { //The menu
             System.out.println("Show (W)hole number.");
             System.out.println("Show (O)nes place number.");
             System.out.println("Show (T)ens place number.");
@@ -20,7 +20,7 @@ public class TestExercise2 {
             System.out.print("Enter your choice: ");
             choice = input.next().toLowerCase().charAt(0);
 
-            if (choice == 'w')
+            if (choice == 'w')													//What happens when user makes a choice
                 System.out.println("Whole number is: " + num.getWhole());
             else if (choice == 'o')
                 System.out.println("The ones place digit is: " + num.getOnes());

@@ -7,7 +7,7 @@ public class TestExercise1 {
         Exercise1 bank = new Exercise1();
         int choice;
 
-        do {
+        do {													//Menu
             System.out.println("(1) Show total in bank.");
             System.out.println("(2) Add a penny.");
             System.out.println("(3) Add a nickel.");
@@ -18,7 +18,7 @@ public class TestExercise1 {
             System.out.print("Enter your choice: ");
             choice = input.nextInt();
 
-            if (choice == 1) System.out.println("Total: $" + bank.getTotal());
+            if (choice == 1) System.out.println("Total: $" + bank.getTotal());			//loop for choosing in the menu
             else if (choice == 2) bank.addPenny();
             else if (choice == 3) bank.addNickel();
             else if (choice == 4) bank.addDime();

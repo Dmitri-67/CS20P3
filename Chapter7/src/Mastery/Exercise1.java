@@ -6,7 +6,7 @@ public class Exercise1 {
     private int dimes;
     private int quarters;
 
-    public Exercise1() {
+    public Exercise1() { //The bank
         pennies = 0;
         nickels = 0;
         dimes = 0;
