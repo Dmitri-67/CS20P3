@@ -4,6 +4,7 @@ public class RandomStats {
 
 	public static void main(String[] args) 
 	{
+
 		int[] outcomes = new int[10];
 		int outcome;
 		
