@@ -33,30 +33,64 @@ public class GettingStarted {
         boolean lastRedState = false;
         int greenscore = 0;
         boolean lastGreenState = false;
-//Im setting up a score counter for green ngl just copy and paste the red stuff to make it work FOR TUG OF WAR
-        while (true) {
-            boolean currentRedState = redButton.getState();
+        boolean gameOver = false;  //game over varialbe thing
+        while (!gameOver) {
 
-            // Detect a NEW press (false → true)
+            boolean currentRedState = redButton.getState();
+            boolean currentGreenState = greenButton.getState();
+
+            // red press
             if (currentRedState && !lastRedState) {
                 redscore++;
-            }
-            if( redButton.getState()){
-                redLED.setState(true);
-            } else {
-                redLED.setState(false);
-            }
-            if(greenButton.getState()){
-                greenLED.setState(true);
-                System.out.println("Score: " + redscore);
-                Thread.sleep(150);
-            } else {
-                greenLED.setState(false);
+                System.out.println("Red: " + redscore);
             }
 
+            // Red LED follows button
+            redLED.setState(currentRedState);
             lastRedState = currentRedState;
+
             Thread.sleep(1);
-        }  
+
+            // reen press
+            if (currentGreenState && !lastGreenState) {
+                greenscore++;
+                System.out.println("Green: " + greenscore);
+            }
+
+            // Green LED follows button
+            greenLED.setState(currentGreenState);
+            lastGreenState = currentGreenState;
+
+            Thread.sleep(1);
+
+            // WIN CHECK
+            if (redscore == 10 || greenscore == 10) {
+                gameOver = true;
+
+                // Flash bothLEDs 5 times
+                for (int i = 0; i < 5; i++) {
+                    redLED.setState(true);
+                    greenLED.setState(true);
+                    Thread.sleep(200);
+
+                    redLED.setState(false);
+                    greenLED.setState(false);
+                    Thread.sleep(200);
+                }
+
+                // Leave the winner on
+                if (redscore == 10) {
+                    System.out.println("Red Wins!");
+                    redLED.setState(true);
+                    greenLED.setState(false);
+                } else {
+                    System.out.println("Green Wins!");
+                    greenLED.setState(true);
+                    redLED.setState(false);
+                }
+            }
+        }
     }
 }
+
   
