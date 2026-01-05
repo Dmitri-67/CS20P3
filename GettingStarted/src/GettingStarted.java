@@ -42,7 +42,7 @@ public class GettingStarted {
             // red press
             if (currentRedState && !lastRedState) {
                 redscore++;
-                System.out.println("Red: " + redscore);
+                System.out.println("Green: " + greenscore + " --- Red: " + redscore);
             }
 
             // Red LED follows button
@@ -51,10 +51,10 @@ public class GettingStarted {
 
             Thread.sleep(1);
 
-            // reen press
+            // green press
             if (currentGreenState && !lastGreenState) {
                 greenscore++;
-                System.out.println("Green: " + greenscore);
+                System.out.println("Green: " + greenscore + " --- Red: " + redscore);
             }
 
             // Green LED follows button
