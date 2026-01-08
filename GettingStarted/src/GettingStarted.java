@@ -33,7 +33,7 @@ public class GettingStarted {
         boolean lastRedState = false;
         int greenscore = 0;
         boolean lastGreenState = false;
-        boolean gameOver = false;  //game over varialbe thing
+        boolean gameOver = false;  //game over varialbe
         while (!gameOver) {
 
             boolean currentRedState = redButton.getState();
