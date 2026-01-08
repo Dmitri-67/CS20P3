@@ -60,7 +60,7 @@ public class AttachDetachEvents {
         redButton.open(1000);
         redLED.open(1000);
 
-        // Keep program running
+        // Keep program running 
         while (true) {
             Thread.sleep(150);
         }

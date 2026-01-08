@@ -33,7 +33,7 @@ public class SmartPhidgetEvents {
         humiditySensor.open(1000);
         temperatureSensor.open(1000);
 
-        //Keep program running
+        //Keep program running   
         while (true) {
             Thread.sleep(150);
         }

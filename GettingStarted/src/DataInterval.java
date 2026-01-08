@@ -22,7 +22,7 @@ public class DataInterval {
         //Set Data Interval | The Data Interval controls how often the program collects data from your Phidget. The Data Interval ranges from 500 ms - 60000 ms.
         temperatureSensor.setDataInterval(60000);
 
-        //Keep program running
+        //Keep program running  
         while (true) {
             Thread.sleep(150);
         }

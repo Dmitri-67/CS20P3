@@ -78,7 +78,7 @@ public class GettingStarted {
                     Thread.sleep(200);
                 }
 
-                // Leave the winner on
+                // Leave the winner on 
                 if (redscore == 10) {
                     System.out.println("Red Wins!");
                     redLED.setState(true);

@@ -18,7 +18,7 @@ public class ClosingPhidgits {
         temperatureSensor.open(1000);
         
         System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
-        //Trying while its closed
+        //Trying while its closed   
         temperatureSensor.close();
         
         System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );

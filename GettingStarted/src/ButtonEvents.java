@@ -9,7 +9,7 @@ public class ButtonEvents {
         static boolean turnRedLEDOn = false;
         static boolean turnGreenLEDOn = false;
 
-        //Handle Exceptions
+        //Handle Exceptions   
         public static void main(String[] args) throws Exception {
 
             //Create

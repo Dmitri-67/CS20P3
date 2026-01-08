@@ -27,7 +27,7 @@ public class Thermostat {
        redLED.open(1000);
        greenButton.open(1000);
        greenLED.open(1000);
-       // Set temperature starts at 21°C
+       // Set temperature starts at 21°C 
        int setTemperature = 21;
 
        

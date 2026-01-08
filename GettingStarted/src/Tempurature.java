@@ -21,7 +21,7 @@ public class Tempurature {
         greenLED.open(1000);
         redLED.open(1000);
 
-        //This will print humidity and temperature read by the sensor every 150ms.
+        //This will print humidity and temperature read by the sensor every 150ms.  
         while(true){
         	 double Temperature = temperatureSensor.getTemperature();
         	if (Temperature >= 30 && Temperature <= 31) {
